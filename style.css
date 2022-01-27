@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Ubuntu", sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+
+    background: url("https://i.ibb.co/KXJ9Dnb/bg.jpg") no-repeat center;
+    display: flex;
+    justify-content: center;
+}
+
+img {
+
+    animation-name: a;
+    animation-duration: 0.3s;
+    border-radius: 60px;
+    height: 100px;
+    width: 100px;
+}
+
+.logo {
+    display: inline-grid;
+    border-radius: 50%;
+    padding: 8px;
+    margin: 8px; 
+    background: linear-gradient(180deg, #f75555, #ffffff);
+    background-size: 200% 200%;
+    animation: animated-gradient 2s linear infinite;
+}
+
+
+
+@keyframes animated-gradient {
+    25% {
+        background-position: left bottom;
+    }
+
+    50% {
+        background-position: right bottom;
+    }
+
+    75% {
+        background-position: right top;
+    }
+
+    100% {
+        background-position: left top;
+    }
+}
+
+.main-div {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.div-1 {
+    animation-name: c1;
+    animation-duration: 2s;
+    border-top: solid #e66767;
+    border-radius: 10px 10px 0px 0px;
+    background: #2c3a47;
+    padding: 50px;
+}
+
+h2 {
+    padding: 0.5pc;
+    margin: 0.4pc;
+    color: #ffffff;
+}
+
+.h2span {
+    padding: 0pc;
+    color: #ffffff;
+}
+
+
+.icon {
+    margin: 15px;
+    padding: 15px;
+
+}
+
+.fab {
+    font-size: 22px;
+    color: #ffffff;
+    padding: 10px;
+}
+
+.contact-div {
+    padding: 10px;
+    margin: 20px;
+
+}
+
+
+.contact {
+    transition: .3s linear;
+    border: solid #e66767 2px;
+    border-radius: 0.6pc;
+    padding: 12px 40px;
+    color: #e66767;
+    background-color: "";
+}
+
+.contact:hover {
+    color: #ffffff;
+    background-color: #e66767;
+}
+
+.div-2 {
+    display: flex;
+    background: #f4f4f4;
+    animation-name: c2;
+    animation-duration: 2s;
+    justify-content: center;
+    border-bottom: solid #2c3a47;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.numbers {
+    align-items: center;
+    display: flex;
+    padding: 30px;
+}
+
+.item {
+    flex: 1;
+    font-size: 13px;
+    color: #e66767;
+    padding: 6px;
+    text-transform: uppercase;
+}
+
+.item span {
+    font-size: 2pc;
+    padding: 12px;
+    display: flex;
+    color: #202930;
+    justify-content: center;
+}
+
+.border {
+    display: flex;
+    justify-content: center;
+    width: 1px;
+    height: 30px;
+    background: #bbb;
+}
+
+@keyframes a {
+
+    100% {
+        width: 100px;
+        height: 100px;
+
+    }
+
+    0% {
+        height: 0px;
+        width: 0px;
+    }
+}
+
+@keyframes c1 {
+
+
+    100% {
+
+        background: #2c3a47;
+
+    }
+
+    0% {
+        background: #2c3a4700;
+    }
+}
+
+
+
+@keyframes c2 {
+
+
+    100% {
+        background: #f4f4f4;
+
+    }
+
+    0% {
+        background: #f4f4f400;
+    }
+}
